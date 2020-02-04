@@ -27,7 +27,7 @@ function Board({title}) {
 
   function listItems() {
     return (
-      <ul className='item'>
+      <ul className='item-list'>
         {items.map((item,idx) => (<Item str={item} key={idx} idx={idx} delTodo={delTodo}/>))}
       </ul>
     )

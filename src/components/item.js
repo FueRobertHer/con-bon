@@ -9,7 +9,7 @@ function Item({str, idx, delTodo}) {
 
   return (
     <div className='item'>
-      <p>{str}</p>
+      <p className='item-text'>{str}</p>
       <button onClick={handleRemove}>
         Remove
       </button>
