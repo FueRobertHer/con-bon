@@ -7,12 +7,11 @@ function Main() {
   const [boards, setBoards] = useState();
 
   return (
-    <div>
-      {Board('Ruby')}
-      {Board('Python')}
-      {Board('JavaScript')}
-      {Board('HTML/CSS')}
-
+    <div className='main'>
+      <Board title={'Ruby'}/>
+      <Board title={'JS'}/>
+      <Board title={'Algos'}/>
+      <Board title={'Other'}/>
     </div>
   )
 

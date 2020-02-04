@@ -1,12 +1,18 @@
 import React, { useState } from 'react';
 
-function Item(str) {
+function Item({str, idx, delTodo}) {
 
-  const [todo, setTodo] = useState;
+  function handleRemove() {
+    delTodo(idx)
+  }
+  
 
   return (
-    <div>
+    <div className='item'>
       <p>{str}</p>
+      <button onClick={handleRemove}>
+        Remove
+      </button>
     </div>
   )
 }
